@@ -1,0 +1,61 @@
+@import 'tailwindcss/dist/base.css';
+@import 'tailwindcss/dist/components.css';
+@import 'tailwindcss/dist/utilities.css';
+
+.logo{
+    display: inline-block;
+    height: 65px;
+    width: 65px;
+    background-image: url(https://img.icons8.com/fluency/48/000000/fox.png);
+    background-size: contain;
+}
+
+button{
+    padding: 7px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 7px;;
+}
+
+.btn-primary{
+    color: hsl(10, 38%, 94%);
+    background-color: #EC8801;
+    box-shadow: 2px 2px 5px  hsl(34, 99%, 20%);
+}
+
+.btn-secondary{
+    color: hsl(34, 99%, 20%);
+}
+
+.btn-primary:hover{
+    background-color: #fa9612;
+}
+
+.btn-primary:active{
+    color: #5C2415;
+}
+
+.btn-secondary:hover{
+    color: hsl(34, 99%, 50%);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+picture{
+    margin: 15px;
+}
+
+.picture--background{
+    width: 350px;
+    height: auto;
+    background-color: rgb(166, 214, 214, 0.5);
+}
+
+img{
+    width: 350px;
+}
