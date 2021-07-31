@@ -1,0 +1,50 @@
+@import 'tailwindcss/dist/base.css';
+@import 'tailwindcss/dist/components.css';
+@import 'tailwindcss/dist/utilities.css';
+
+.avocados_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 35px 15px;
+}
+
+.avocado_target {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  max-width: 400px;
+  height: 200px;
+  border-radius: 15px;
+  padding: 7px;
+}
+
+.avocado_target:hover {
+    background-color: hsl(0, 10%, 94%);
+    box-shadow: 2px 4px 7px 1px hsl(0, 2%, 74%);
+}
+
+.avocado-target--img {
+    align-self: center;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%
+}
+
+.avocado-target-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.titulo_avocado {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.precio_avocado {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
