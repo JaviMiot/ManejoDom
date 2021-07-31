@@ -2,7 +2,7 @@
  * This file is just a silly example to show everything working in the browser.
  * When you're ready to start on your site, clear the file. Happy hacking!
  **/
-
+import h from 'hyperscript';
 import { registerImage } from './lazy.js';
 
 const app = document.querySelector('#app');
@@ -14,8 +14,11 @@ const btn_add = document.querySelector('#btn_add');
 const btn_clear = document.querySelector('#btn_clear');
 
 function addImageFox(id) {
-  const target = document.createElement('picture');
-  target.className = 'picture--background';
+  /* const target = document.createElement('picture');
+  target.className = 'picture--background'; */
+
+  const target = h('picture.picture--background'); //* usando hyperscript
+
   const imagen = document.createElement('img');
   imagen.dataset.src = `${url}${randomId()}.jpg`;
   target.appendChild(imagen);
